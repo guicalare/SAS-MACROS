@@ -755,6 +755,8 @@ run;
 			hash_char = char('0123456789bcdefghjkmnpqrstuvwxyz', binary_chunck_value + 1);
 			&geohash_variable_name = catt( &geohash_variable_name , hash_char);
 		end;
+		
+		area_K_2 = geodist(latmin, lonmax, latmax, lonmax, "K") * geodist(latmax, lonmin, latmax, lonmax, "K");
 
 		latdif = abs(abs(latmax) - abs(latmin));
 		londif = abs(abs(lonmax) - abs(lonmin));
