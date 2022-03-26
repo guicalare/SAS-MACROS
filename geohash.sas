@@ -1,3 +1,5 @@
+/*https://www.rosettacode.org/wiki/Geohash*/
+
 proc fcmp outlib=sasuser.userfuncs.geo;
 
 	FUNCTION geohash_1(longitude, latitude) $;
